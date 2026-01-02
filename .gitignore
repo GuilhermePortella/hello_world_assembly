@@ -1,0 +1,23 @@
+# === Assembly / C build artifacts ===
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+
+# === Debug / temporary ===
+*.pdb
+*.ilk
+*.log
+*~
+*.tmp
+
+# === IDEs / Editors ===
+.vscode/
+.idea/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+.vscode/
