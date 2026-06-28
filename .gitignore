@@ -5,6 +5,8 @@
 *.dll
 *.a
 *.lib
+build/
+MacOSArm64/build/
 
 # === Debug / temporary ===
 *.pdb
