@@ -1,9 +1,9 @@
 AS := clang
 BUILD_DIR := build
 
-PROGRAMS := hello loop calling_convention
+PROGRAMS := hello loop calling_convention bank_mainframe
 
-.PHONY: all clean run-hello run-loop run-calling-convention
+.PHONY: all clean run-hello run-loop run-calling-convention run-bank-mainframe
 
 all: $(PROGRAMS:%=$(BUILD_DIR)/%)
 
@@ -21,6 +21,9 @@ run-loop: $(BUILD_DIR)/loop
 
 run-calling-convention: $(BUILD_DIR)/calling_convention
 	./$(BUILD_DIR)/calling_convention
+
+run-bank-mainframe: $(BUILD_DIR)/bank_mainframe
+	./$(BUILD_DIR)/bank_mainframe
 
 clean:
 	rm -rf $(BUILD_DIR)

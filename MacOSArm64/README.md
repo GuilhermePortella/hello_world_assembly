@@ -53,6 +53,7 @@ make
 make run-hello
 make run-loop
 make run-calling-convention
+make run-bank-mainframe
 ```
 
 Ou diretamente:
@@ -61,7 +62,19 @@ Ou diretamente:
 ./build/hello
 ./build/loop
 ./build/calling_convention
+./build/bank_mainframe
 ```
+
+## Simulador bancario em estilo mainframe
+
+O arquivo `bank_mainframe.s` simula um lote bancario em memoria:
+
+- autorizacao simples de operador;
+- criacao de clientes em uma tabela fixa;
+- deposito e saque com validacao de saldo;
+- mensagens de auditoria no console.
+
+Ele nao e um banco de dados real nem um ambiente mainframe seguro de verdade. A ideia e mostrar, em Assembly ARM64 no macOS, como uma rotina poderia organizar validacao, registros fixos, transacoes e auditoria.
 
 ## Compilando um arquivo manualmente
 
